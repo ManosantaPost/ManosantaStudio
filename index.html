@@ -9,11 +9,10 @@
 <meta property="og:image" content="www.manosantapost.com/images/LOGO_MANOSANTA_W.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="LOGO_MANOSANTA_16x16.png" rel="icon" sizes="16x16" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="icon" sizes="1280x1280" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="icon" sizes="1280x1280" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="apple-touch-icon" sizes="1280x1280">
+<link href="LOGO_MANOSANTA_W.png" rel="icon" type="image/png">
+<link href="LOGO_MANOSANTA_W.png" rel="icon" type="image/png">
+<link href="LOGO_MANOSANTA_W.png" rel="apple-touch-icon">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link href="css/Manosanta.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
@@ -23,7 +22,6 @@ $(document).ready(function()
 {
    $('#wb_Image1').addClass('visibility-hidden');
    $('#wb_Text1').addClass('visibility-hidden');
-   $('#wb_Text2').addClass('visibility-hidden');
    function onScrollImage1()
    {
       var $obj = $("#wb_Image1");
@@ -72,30 +70,6 @@ $(document).ready(function()
    {
       onScrollText1();
    });
-   function onScrollText2()
-   {
-      var $obj = $("#wb_Text2");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-in-left', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Text2').inViewPort(true))
-   {
-      $('#wb_Text2').addClass("in-viewport");
-   }
-   onScrollText2();
-   $(window).scroll(function(event)
-   {
-      onScrollText2();
-   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -139,10 +113,7 @@ $(window).on('load', function()
 <div id="LayoutGrid3">
 <div class="col-1">
 <div id="wb_Image2">
-<img src="images/LOGO_MANOSANTA_W.png" id="Image2" alt="" width="1170" height="1170">
-</div>
-<div id="wb_Text2">
-<span style="color:#FFFFFF;">WORK IN PROGRESS...</span>
+<img src="" id="Image2" alt="">
 </div>
 </div>
 </div>
@@ -151,6 +122,18 @@ $(window).on('load', function()
 <path class="divider-fill" d="M0,33.886L13.281,0L62.225,67.779L88.288,61.436L100,33.886L100,100L0,100L0,33.886z" style="fill-opacity:0.5;"/>
 <path class="divider-fill" d="M0,64.8L10.938,44.6L35.196,65.112L62.225,47L89.063,78.844L100,64.8L100,100L0,100L0,64.8z"/>
 </svg></div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="col-1">
+<div id="wb_Card1" class="card">
+   <div id="Card1-card-body">
+      <div id="Card1-card-overlay"><img id="Card1-card-item0" src="images/tv_PNG39292.png" width="1157" height="740" alt="" title=""></div>
+      <div id="Card1-card-item1"><iframe src="https://vimeo.com/622576121" frameborder="0" allowfullscreen></iframe></div>
+   </div>
+</div>
+</div>
+</div>
 </div>
 <div id="preloader"></div>
 </body>
