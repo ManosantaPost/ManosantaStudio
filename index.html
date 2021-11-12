@@ -16,6 +16,7 @@
 <link href="css/Manosanta.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
+<script src="wb.newsviewer.min.js"></script>
 <script src="wwb17.min.js"></script>
 <script>
 $(document).ready(function()
@@ -70,6 +71,11 @@ $(document).ready(function()
    {
       onScrollText1();
    });
+   var NewsFeedTicker1_Data = new Array();
+   NewsFeedTicker1_Data[0] = ["", "Lorem Ipsum", "Fri, 12 Nov 2021 04:26:13 GMT", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in tellus velit. Nunc et sagittis nisl. In fermentum dolor vel mi ultricies, non egestas neque pellentesque. Vestibulum at feugiat lectus. Proin feugiat scelerisque magna, sed elementum eros ultrices eget. Aenean a posuere turpis. Aenean sed ante tincidunt, luctus justo et, gravida velit. Morbi orci erat, pellentesque porttitor est eu, vehicula auctor arcu. Vivamus sodales, nisl sed vestibulum efficitur, libero justo pharetra nibh, venenatis rhoncus lacus nisi ut risus. "];
+   NewsFeedTicker1_Data[1] = ["", "Neque porro quisquam", "Fri, 20 Jul 1990 04:26:29 GMT", "Nunc volutpat laoreet auctor. Maecenas id erat et mi accumsan dapibus. Proin tincidunt est a lectus cursus venenatis. Phasellus vulputate ante non dictum feugiat. Proin at lobortis mi. Donec id condimentum lorem. Fusce eleifend lacus vel dui rutrum euismod et non dolor. "];
+   NewsFeedTicker1_Data[2] = ["", "Vestibulum ante ipsum", "Wed, 06 Jul 2005 04:26:35 GMT", "Aliquam ac leo tristique, placerat libero condimentum, semper purus. Duis at vestibulum leo. Vivamus a diam rutrum, pharetra neque in, cursus tortor. Sed id scelerisque dui. In ut scelerisque nibh. Ut eu porta odio, at hendrerit dolor. Praesent in placerat velit. Etiam hendrerit feugiat feugiat. Pellentesque ut augue consectetur, placerat risus vitae, posuere ante. Aenean nisi erat, iaculis ut tincidunt sed, volutpat et ante. dunt sed, volutpat et ante. "];
+   $("#NewsFeedTicker1").newsviewer({ mode: 'default', sortOrder: 0, dataSource: 'local', param: NewsFeedTicker1_Data, target: '_self', dateFormat: 'dd/mm/yy', maxItems: 10});
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -79,6 +85,20 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v12.0" nonce="1CBueBI9"></script>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
@@ -132,9 +152,30 @@ $(window).on('load', function()
   </head>
 <body>
 <img src="https://pngimg.com/uploads/tv/tv_PNG39278.png" width="100%" id="TVborder" />
-<iframe width="100%" height="100%" src="https://player.vimeo.com/video/622576121?h=92d4a4e5c6&autoplay=1&title=0&byline=0&portrait=0"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/622576121?h=92d4a4e5c6&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:42%;left:9%;width:66%;height:79%;" frameborder="0"></iframe>
 </body>
 </html></div>
+</div>
+</div>
+</div>
+<div id="wb_Divider1">
+<div id="Divider1-overlay"></div>
+<div id="Divider1">
+<div class="col-1">
+<hr id="DividerLine1">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<!-- Facebook -->
+<div id="Html2">
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div></div>
+</div>
+<div class="col-2">
+<div id="NewsFeedTicker1">
+</div>
 </div>
 </div>
 </div>

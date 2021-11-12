@@ -181,7 +181,7 @@ input:focus, textarea:focus, select:focus
    background-color: #424242;
    background-color: rgba(66,66,66,0.00);
    display: inline-block;
-   height: 46px;
+   height: 44px;
 }
 #wb_ResponsiveMenu1 ul
 {
@@ -223,7 +223,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1 > ul > li > a 
 {
-   height: 16px;
+   height: 14px;
 }
 .ResponsiveMenu1 a 
 {
@@ -238,7 +238,7 @@ input:focus, textarea:focus, select:focus
 {
    display: none;
    position: absolute;
-   top: 46px;
+   top: 44px;
 }
 #wb_ResponsiveMenu1 ul li:hover > ul
 {
@@ -278,7 +278,7 @@ input:focus, textarea:focus, select:focus
 {
    left: 103px;
    position: relative;
-   top: -46px;
+   top: -44px;
 }
 #wb_ResponsiveMenu1 .arrow-down 
 {
@@ -371,8 +371,8 @@ input:focus, textarea:focus, select:focus
 }
 #ResponsiveMenu1-title
 {
-   height: 46px !important;
-   line-height: 46px !important;
+   height: 44px !important;
+   line-height: 44px !important;
    text-align: center;
 }
 #wb_ResponsiveMenu1 ul li 
@@ -438,7 +438,7 @@ input:focus, textarea:focus, select:focus
    display: block;
    position: absolute;
    left: 30px;
-   top: 11px;
+   top: 10px;
 }
 #ResponsiveMenu1-icon span 
 {
@@ -505,7 +505,7 @@ input:focus, textarea:focus, select:focus
    color: #000000;
    font-family: "Bebas Neue";
    font-weight: normal;
-   font-size: 48px;
+   font-size: 19px;
 }
 #wb_Text1 div
 {
@@ -634,7 +634,7 @@ input:focus, textarea:focus, select:focus
    color: #FFFFFF;
    font-family: "Bebas Neue";
    font-weight: normal;
-   font-size: 48px;
+   font-size: 19px;
 }
 #wb_Text2 div
 {
@@ -916,11 +916,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid1
 {
@@ -1018,11 +1013,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid3
 {
@@ -1081,11 +1071,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid2
 {
@@ -1145,11 +1130,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid1
 {
@@ -1247,11 +1227,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid3
 {
@@ -1310,11 +1285,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid2
 {
