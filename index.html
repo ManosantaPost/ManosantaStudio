@@ -24,6 +24,7 @@ $(document).ready(function()
 {
    $('#wb_Image1').addClass('visibility-hidden');
    $('#wb_Text1').addClass('visibility-hidden');
+   $('#Html1').addClass('visibility-hidden');
    function onScrollImage1()
    {
       var $obj = $("#wb_Image1");
@@ -71,6 +72,30 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollText1();
+   });
+   function onScrollHtml1()
+   {
+      var $obj = $("#Html1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Html1', 'slide-left-in', 0, 2000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Html1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Html1').inViewPort(true))
+   {
+      $('#Html1').addClass("in-viewport");
+   }
+   onScrollHtml1();
+   $(window).scroll(function(event)
+   {
+      onScrollHtml1();
    });
    var NewsFeedTicker1_Data = new Array();
    NewsFeedTicker1_Data[0] = ["", "Lorem Ipsum", "Thu, 21 Jul 1994 05:25:03 GMT", "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi pharetra nibh mauris, vel auctor quam sodales a. Quisque congue, est ut facilisis auctor, elit urna elementum libero, quis malesuada velit neque at ipsum. Praesent et laoreet dolor. Mauris at purus rutrum, pharetra est vitae, sagittis nisi. Proin in dolor ac lacus dignissim fermentum in consequat tortor. Pellentesque id fermentum ante. Sed a sagittis erat. Pellentesque convallis pretium nibh, nec euismod turpis tincidunt at. Fusce ut luctus mauris, eget suscipit eros. Vivamus sollicitudin hendrerit dui non rhoncus. Sed sed faucibus quam. "];
@@ -212,6 +237,21 @@ $(window).on('load', function()
       </div>
    </body>
 </html></div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Footer">
+<div id="Footer-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0 140h1280C573.08 140 0 0 0 0z"/>
+</svg></div>
+<div id="Footer">
+<div class="col-1">
+<div id="wb_Text9">
+<div id="Text9-max-width">
+<span style="color:#000000;"><br>Copyright © Manosanta 2021</span>
+</div>
 </div>
 </div>
 </div>
