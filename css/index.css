@@ -659,7 +659,7 @@ input:focus, textarea:focus, select:focus
    flex-direction: row;
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
-   padding: 0;
+   padding: 0px 0px 380px 0px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1200px;
@@ -709,95 +709,6 @@ input:focus, textarea:focus, select:focus
    max-width: 100% !important;
 }
 }
-#wb_Divider1
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1024px;
-}
-#Divider1
-{
-   box-sizing: border-box;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   padding: 350px 0px 50px 0px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#Divider1 > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#Divider1 > .col-1
-{
-   -webkit-flex: 0 0 auto;
-   flex: 0 0 auto;
-}
-#Divider1 > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 100%;
-   max-width: 100%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: center;
-   justify-content: center;
-   text-align: center;
-}
-@media (max-width: 480px)
-{
-#Divider1 > .col-1
-{
-   -webkit-flex-basis: 100% !important;
-   flex-basis: 100% !important;
-   max-width: 100% !important;
-}
-}
-#DividerLine1
-{
-   border-color: #4F4F4F;
-   border-color: rgba(79,79,79,0.20);
-   border-style: groove;
-   border-bottom-width: 12px;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   height: 0 !important;
-   line-height: 0px !important;
-   margin: 0;
-   padding: 0;
-}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -815,17 +726,16 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid2
 {
    box-sizing: border-box;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   padding: 0;
+   padding: 0px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -834,62 +744,47 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
 {
-   -webkit-flex: 0 0 auto;
-   flex: 0 0 auto;
+   float: left;
 }
-#LayoutGrid2 > .col-1
+#LayoutGrid2 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 50%;
-   max-width: 50%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: center;
-   justify-content: center;
+   width: 50%;
    text-align: center;
 }
-#LayoutGrid2 > .col-2
+#LayoutGrid2 > .row > .col-2
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 50%;
-   max-width: 50%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: center;
-   justify-content: center;
+   width: 50%;
    text-align: center;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
 }
 @media (max-width: 480px)
 {
-#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
 {
-   -webkit-flex-basis: 100% !important;
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+   float: none;
+   width: 100% !important;
 }
 }
 #NewsFeedTicker1
@@ -904,9 +799,9 @@ input:focus, textarea:focus, select:focus
 #NewsFeedTicker1 .headline
 {
    position: absolute;
-   padding: 2px;
+   padding: 8px;
    height: 100%;
-   margin: 0 0 14px 0;
+   margin: 0 0 8px 0;
    top: 110%;
    overflow: hidden;
    font-family: "Roboto Condensed";
@@ -923,7 +818,7 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    font-family: "Roboto Condensed";
    font-weight: bold;
-   font-size: 37px;
+   font-size: 27px;
    color: #FFFFFF;
    font-style: normal;
    text-decoration: none;
@@ -938,8 +833,8 @@ input:focus, textarea:focus, select:focus
    margin-bottom: 0px;
    font-family: "Roboto Condensed";
    font-weight: normal;
-   font-size: 19px;
-   color: #7B68EE;
+   font-size: 16px;
+   color: #6A5ACD;
    font-style: normal;
    text-decoration: none;
 }
@@ -955,12 +850,10 @@ input:focus, textarea:focus, select:focus
 }
 #NewsFeedTicker1
 {
-   display: block;
-   float: left;
+   display: inline-block;
    position: relative;
-   width: 100%;
-   box-sizing: border-box;
-   height: 519px;
+   width: 568px;
+   height: 504px;
 }
 #Html1
 {
@@ -992,21 +885,15 @@ input:focus, textarea:focus, select:focus
 #NewsFeedTicker1
 {
    overflow: hidden;
-   height: 519px;
-   z-index: 7;
-}
-#DividerLine1
-{
-   display: block;
-   width: 100%;
-   z-index: 5;
+   height: 504px;
+   z-index: 6;
 }
 #Html2
 {
    display: inline-block;
-   width: 570px;
-   height: 519px;
-   z-index: 6;
+   width: 100%;
+   height: 506px;
+   z-index: 5;
 }
 @media only screen and (min-width: 375px) and (max-width: 1199px)
 {
@@ -1185,7 +1072,7 @@ body
 }
 #LayoutGrid4
 {
-   padding: 0;
+   padding: 0px 0px 380px 0px;
 }
 #LayoutGrid4 > .col-1
 {
@@ -1393,7 +1280,7 @@ body
 }
 #LayoutGrid4
 {
-   padding: 0;
+   padding: 0px 0px 380px 0px;
 }
 #LayoutGrid4 > .col-1
 {
