@@ -13,6 +13,7 @@
 <link href="LOGO_MANOSANTA_W.png" rel="icon" sizes="1280x1280" type="image/png">
 <link href="LOGO_MANOSANTA_W.png" rel="apple-touch-icon" sizes="1280x1280">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link href="css/Manosanta.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
@@ -76,11 +77,6 @@ $(document).ready(function()
    NewsFeedTicker1_Data[1] = ["", "Pellentesque habitant ", "Tue, 22 Oct 2019 05:25:42 GMT", "Sit amet suscipit metus. Proin tristique diam vel condimentum mollis. Vivamus non est ex. Nulla porta ipsum eros. Mauris justo tellus, pellentesque et arcu non, posuere euismod magna. Mauris est turpis, feugiat et felis nec, bibendum rhoncus sem. Nullam libero odio, rutrum at ultricies sagittis, porttitor et ligula. "];
    NewsFeedTicker1_Data[2] = ["", "Aliquam ac leo tristique", "Fri, 09 Jul 2004 05:26:15 GMT", "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam quis ex vel lorem posuere finibus a nec ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur suscipit purus, id varius diam feugiat non. Sed mattis velit orci, in dapibus sem ultricies feugiat. Ut sed mauris mattis, porta erat a, aliquet ipsum. Nulla dapibus eros non blandit consectetur. Pellentesque placerat quam lectus, quis semper leo imperdiet sed. "];
    $("#NewsFeedTicker1").newsviewer({ mode: 'default', sortOrder: 0, dataSource: 'local', param: NewsFeedTicker1_Data, target: '_self', dateFormat: 'mm/dd/yy', maxItems: 10});
-   var NewsFeedTicker2_Data = new Array();
-   NewsFeedTicker2_Data[0] = ["", "Lorem Ipsum", "Thu, 21 Jul 1994 05:25:03 GMT", "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi pharetra nibh mauris, vel auctor quam sodales a. Quisque congue, est ut facilisis auctor, elit urna elementum libero, quis malesuada velit neque at ipsum. Praesent et laoreet dolor. Mauris at purus rutrum, pharetra est vitae, sagittis nisi. Proin in dolor ac lacus dignissim fermentum in consequat tortor. Pellentesque id fermentum ante. Sed a sagittis erat. Pellentesque convallis pretium nibh, nec euismod turpis tincidunt at. Fusce ut luctus mauris, eget suscipit eros. Vivamus sollicitudin hendrerit dui non rhoncus. Sed sed faucibus quam. "];
-   NewsFeedTicker2_Data[1] = ["", "Pellentesque habitant ", "Tue, 22 Oct 2019 05:25:42 GMT", "Sit amet suscipit metus. Proin tristique diam vel condimentum mollis. Vivamus non est ex. Nulla porta ipsum eros. Mauris justo tellus, pellentesque et arcu non, posuere euismod magna. Mauris est turpis, feugiat et felis nec, bibendum rhoncus sem. Nullam libero odio, rutrum at ultricies sagittis, porttitor et ligula. "];
-   NewsFeedTicker2_Data[2] = ["", "Aliquam ac leo tristique", "Fri, 09 Jul 2004 05:26:15 GMT", "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam quis ex vel lorem posuere finibus a nec ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur suscipit purus, id varius diam feugiat non. Sed mattis velit orci, in dapibus sem ultricies feugiat. Ut sed mauris mattis, porta erat a, aliquet ipsum. Nulla dapibus eros non blandit consectetur. Pellentesque placerat quam lectus, quis semper leo imperdiet sed. "];
-   $("#NewsFeedTicker2").newsviewer({ mode: 'default', sortOrder: 0, dataSource: 'local', param: NewsFeedTicker2_Data, target: '_self', dateFormat: 'mm/dd/yy', maxItems: 10});
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -92,6 +88,8 @@ $(window).on('load', function()
 <body>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="yZO2gVZ7"></script>
+<div id="wb_Text2">
+<span style="color:#000000;">Double click to edit</span></div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
@@ -166,8 +164,8 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2-divider-top">
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-divider-top">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 24" preserveAspectRatio="none">
 <defs>
    <path id="wave-animated" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -180,38 +178,51 @@ $(window).on('load', function()
 </g>
 </svg>
 </div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="wb_Text3">
+<span style="color:#000000;">NEWSFEED</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
-<div id="NewsFeedTicker2">
+<div class="col-1-padding">
+<div id="NewsFeedTicker1">
 </div>
 </div>
 </div>
-</div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
-<div class="col-1">
-<div id="wb_JavaScript2">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="1170" data-height="504" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" data-adapt-container-width="%adapt_container_width%"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">https://www.facebook.com/facebook</a></blockquote></div></div>
+<div class="col-2">
+<div class="col-2-padding">
+<!-- Facebook -->
+<div id="Html2">
+<html>
+       </head>
+         <body>
+            <div class="embed-container2">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+   </body>
+</html></div>
 </div>
 </div>
 </div>
 </div>
 <div id="wb_Footer">
 <div id="Footer-divider-bottom">
-<svg version="1.1" viewBox="0 0 240 24" preserveAspectRatio="none">
-<path class="divider-fill" style="opacity:0.33" d="M0,13.229V23.87h240V13.27C212.247,6.884,170.508,0,119.81,0 C69.18,0,27.642,6.884,0,13.229z" />
-<path class="divider-fill" style="opacity:0.33" d="M0,18.904V24h240v-5.036c-21.641-6.315-64.639-16.257-120.171-16.257 C64.351,2.707,21.572,12.589,0,18.904z" />
-<path class="divider-fill" d="M119.829,5.115C47.852,5.115,0,24,0,24h239.961C239.961,24,191.816,5.115,119.829,5.115z" />
-</svg>
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0 140h1280C573.08 140 0 0 0 0z"/>
+</svg></div>
 <div id="Footer">
 <div class="col-1">
 <div id="wb_Text9">
