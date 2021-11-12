@@ -1003,12 +1003,12 @@ input:focus, textarea:focus, select:focus
    flex-direction: row;
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
-   padding: 0;
+   padding: 20px 0px 0px 0px;
    margin-right: auto;
    margin-left: auto;
    max-width: 1200px;
 }
-#LayoutGrid5 > .col-1, #LayoutGrid5 > .col-2
+#LayoutGrid5 > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1017,7 +1017,7 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid5 > .col-1, #LayoutGrid5 > .col-2
+#LayoutGrid5 > .col-1
 {
    -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
@@ -1040,33 +1040,13 @@ input:focus, textarea:focus, select:focus
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-   text-align: right;
-}
-#LayoutGrid5 > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-   text-align: right;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
 }
 @media (max-width: 480px)
 {
-#LayoutGrid5 > .col-1, #LayoutGrid5 > .col-2
+#LayoutGrid5 > .col-1
 {
    -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
@@ -1093,7 +1073,7 @@ input:focus, textarea:focus, select:focus
    font-family: "Roboto Condensed";
    font-weight: normal;
    font-size: 12px;
-   color: #FFFFFF;
+   color: #F5F5F5;
    font-style: normal;
    text-decoration: none;
 }
@@ -1105,13 +1085,13 @@ input:focus, textarea:focus, select:focus
    font-family: "Roboto Condensed";
    font-weight: bold;
    font-size: 27px;
-   color: #FFFFFF;
+   color: #F5F5F5;
    font-style: normal;
    text-decoration: none;
 }
 #NewsFeedTicker2 h4 a
 {
-   color: #FFFFFF;
+   color: #F5F5F5;
    text-decoration: none;
 }
 #NewsFeedTicker2 .publication-date
@@ -1120,7 +1100,7 @@ input:focus, textarea:focus, select:focus
    font-family: "Roboto Condensed";
    font-weight: normal;
    font-size: 16px;
-   color: #6A5ACD;
+   color: #7B68EE;
    font-style: normal;
    text-decoration: none;
 }
