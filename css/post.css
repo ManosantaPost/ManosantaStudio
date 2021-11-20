@@ -181,7 +181,7 @@ input:focus, textarea:focus, select:focus
    background-color: #424242;
    background-color: rgba(66,66,66,0.00);
    display: inline-block;
-   height: 46px;
+   height: 47px;
 }
 #wb_ResponsiveMenu1 ul
 {
@@ -223,7 +223,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1 > ul > li > a 
 {
-   height: 16px;
+   height: 17px;
 }
 .ResponsiveMenu1 a 
 {
@@ -238,7 +238,7 @@ input:focus, textarea:focus, select:focus
 {
    display: none;
    position: absolute;
-   top: 46px;
+   top: 47px;
 }
 #wb_ResponsiveMenu1 ul li:hover > ul
 {
@@ -278,7 +278,7 @@ input:focus, textarea:focus, select:focus
 {
    left: 103px;
    position: relative;
-   top: -46px;
+   top: -47px;
 }
 #wb_ResponsiveMenu1 .arrow-down 
 {
@@ -371,8 +371,8 @@ input:focus, textarea:focus, select:focus
 }
 #ResponsiveMenu1-title
 {
-   height: 46px !important;
-   line-height: 46px !important;
+   height: 47px !important;
+   line-height: 47px !important;
    text-align: center;
 }
 #wb_ResponsiveMenu1 ul li 
@@ -619,34 +619,6 @@ input:focus, textarea:focus, select:focus
    transform-origin: bottom;
    transform: rotateY(0deg);
 }
-#wb_Text2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text2
-{
-   color: #FFFFFF;
-   font-family: "Bebas Neue";
-   font-weight: normal;
-   font-size: 48px;
-}
-#wb_Text2 div
-{
-   text-align: center;
-}
-#wb_Text2
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -711,6 +683,12 @@ input:focus, textarea:focus, select:focus
    justify-content: center;
    text-align: center;
 }
+#LayoutGrid2 > .col-1 > .col-1-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 50px 0px 0px 0px;
+}
 @media (max-width: 480px)
 {
 #LayoutGrid2 > .col-1
@@ -720,21 +698,148 @@ input:focus, textarea:focus, select:focus
    max-width: 100% !important;
 }
 }
-#Vimeo1
+#wb_Text9 
 {
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
 }
-#wb_Vimeo1
+#Text9-max-width
+{
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1200px;
+   width: 100%;
+}
+#wb_Text9
+{
+   color: #000000;
+   font-family: "Roboto Condensed";
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_Text9 div
+{
+   text-align: center;
+}
+#wb_Text9
 {
    display: block;
-   position: relative;
    margin: 0;
-   height: 458px;
-   vertical-align: top;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Footer
+{
+   clear: both;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #000000;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#Footer
+{
+   box-sizing: border-box;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding: 15px 0px 15px 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1200px;
+}
+#Footer > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#Footer > .col-1
+{
+   -webkit-flex: 0 0 auto;
+   flex: 0 0 auto;
+}
+#Footer > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#Footer > .col-1
+{
+   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#Footer-divider-bottom
+{
+   overflow: hidden;
+   position: absolute;
+   line-height: 0;
+   bottom: 0%;
+   left: 0;
+   width: 100%;
+   height: 50px;
+}
+#Footer-divider-bottom svg
+{
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#Footer-divider-bottom .divider-fill
+{
+   fill: #FFFFFF;
+   transform-origin: bottom;
+   transform: rotateY(0deg);
+}
+#Html1
+{
+   display: inline-block;
+   width: 100%;
+   height: 467px;
+   z-index: 3;
 }
 #wb_ResponsiveMenu1
 {
@@ -748,12 +853,6 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    height: auto;
    z-index: 0;
-}
-#wb_Vimeo1
-{
-   display: inline-block;
-   width: 100%;
-   z-index: 4;
 }
 @media only screen and (min-width: 375px) and (max-width: 1199px)
 {
@@ -775,11 +874,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid1
 {
@@ -877,11 +971,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid3
 {
@@ -922,20 +1011,6 @@ body
    top: 0%;
    left: 0;
 }
-#wb_Text2
-{
-   visibility: visible;
-   display: block;
-}
-#wb_Text2
-{
-   font-family: "Bebas Neue";
-   font-weight: normal;
-   font-size: 75px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
 #wb_LayoutGrid2
 {
    visibility: visible;
@@ -971,12 +1046,74 @@ body
    justify-content: flex-start;
    text-align: left;
 }
-#wb_Vimeo1
+#LayoutGrid2 > .col-1 > .col-1-padding
 {
    width: 100%;
+   padding: 0;
+}
+#wb_Text9
+{
    visibility: visible;
    display: block;
+}
+#wb_Text9
+{
+   font-family: "Roboto Condensed";
+   font-weight: normal;
+   font-size: 16px;
    margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Html1
+{
+   width: 375px;
+   height: 467px;
+   visibility: visible;
+   display: inline-block;
+}
+#wb_Footer
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Footer
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Footer
+{
+   padding: 15px 0px 15px 0px;
+}
+#Footer > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#Footer > .col-1
+{
+   display: flex;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-content: flex-start;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+#Footer-divider-bottom
+{
+   height: 50px;
+}
+#Footer-divider-bottom
+{
+   bottom: 0%;
 }
 }
 @media only screen and (max-width: 374px)
@@ -999,11 +1136,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid1
 {
@@ -1101,11 +1233,6 @@ body
 {
    visibility: visible;
    display: table;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
 }
 #wb_LayoutGrid3
 {
@@ -1146,20 +1273,6 @@ body
    top: 0%;
    left: 0;
 }
-#wb_Text2
-{
-   visibility: visible;
-   display: block;
-}
-#wb_Text2
-{
-   font-family: "Bebas Neue";
-   font-weight: normal;
-   font-size: 75px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
 #wb_LayoutGrid2
 {
    visibility: visible;
@@ -1195,11 +1308,107 @@ body
    justify-content: flex-start;
    text-align: left;
 }
-#wb_Vimeo1
+#LayoutGrid2 > .col-1 > .col-1-padding
 {
    width: 100%;
+   padding: 0;
+}
+#wb_Text9
+{
    visibility: visible;
    display: block;
+}
+#wb_Text9
+{
+   font-family: "Roboto Condensed";
+   font-weight: normal;
+   font-size: 16px;
    margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Html1
+{
+   width: 320px;
+   height: 467px;
+   visibility: visible;
+   display: inline-block;
+}
+#wb_Footer
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Footer
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Footer
+{
+   padding: 15px 0px 15px 0px;
+}
+#Footer > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#Footer > .col-1
+{
+   display: flex;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-content: flex-start;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+#Footer-divider-bottom
+{
+   height: 50px;
+}
+#Footer-divider-bottom
+{
+   bottom: 0%;
 }
 }
+    
+    iframe {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    
+    #TVborder {
+      position: relative;
+      float: center;
+      z-index: 0;
+      left: 0px;
+      width: 100%;
+      pointer-events: none;
+      }
+      
+   .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0%;
+    height: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+   .embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+}
+      
+  

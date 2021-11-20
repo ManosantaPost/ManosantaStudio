@@ -9,9 +9,9 @@
 <meta property="og:image" content="www.manosantapost.com/images/LOGO_MANOSANTA_W.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="LOGO_MANOSANTA_16x16.png" rel="icon" sizes="16x16" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="icon" sizes="1280x1280" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="icon" sizes="1280x1280" type="image/png">
-<link href="LOGO_MANOSANTA_W.png" rel="apple-touch-icon" sizes="1280x1280">
+<link href="LOGO_MANOSANTA_W.png" rel="icon" type="image/png">
+<link href="LOGO_MANOSANTA_W.png" rel="icon" type="image/png">
+<link href="LOGO_MANOSANTA_W.png" rel="apple-touch-icon">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link href="css/Manosanta.css" rel="stylesheet">
@@ -23,7 +23,7 @@ $(document).ready(function()
 {
    $('#wb_Image1').addClass('visibility-hidden');
    $('#wb_Text1').addClass('visibility-hidden');
-   $('#wb_Text2').addClass('visibility-hidden');
+   $('#Html1').addClass('visibility-hidden');
    function onScrollImage1()
    {
       var $obj = $("#wb_Image1");
@@ -72,29 +72,29 @@ $(document).ready(function()
    {
       onScrollText1();
    });
-   function onScrollText2()
+   function onScrollHtml1()
    {
-      var $obj = $("#wb_Text2");
+      var $obj = $("#Html1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-in-left', 0, 1250);
+         AnimateCss('Html1', 'slide-left-in', 0, 2000);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-out', 0, 0);
+         AnimateCss('Html1', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_Text2').inViewPort(true))
+   if (!$('#Html1').inViewPort(true))
    {
-      $('#wb_Text2').addClass("in-viewport");
+      $('#Html1').addClass("in-viewport");
    }
-   onScrollText2();
+   onScrollHtml1();
    $(window).scroll(function(event)
    {
-      onScrollText2();
+      onScrollHtml1();
    });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
@@ -149,12 +149,34 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
-<div id="wb_Text2">
-<span style="color:#FFFFFF;">Color Correction</span>
+<div class="col-1-padding">
+<!-- TV Frame -->
+<div id="Html1">
+<html>
+    </head>
+   <body>
+      <div class="embed-container">
+         <img src="https://i.ibb.co/s6tQJc0/Frame-TV1080p.png" width="100%" id="TVborder" />
+         <img src="https://i.ibb.co/b5pG6Vp/STUDIOS.jpg" onclick="this.style.display='none';" style="position:absolute;opacity:1;left:3%;top:6%;width:85%;height:84%; z-index:-2;"/>
+         <iframe src="https://player.vimeo.com/video/622576121?h=92d4a4e5c6&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:6%;left:3%;width:85%;height:84%;" frameborder="0"></iframe>
+      </div>
+   </body>
+</html></div>
 </div>
-<div id="wb_Vimeo1">
-<iframe id="Vimeo1" src="https://player.vimeo.com/video/622576121?autopause=1&autoplay=1&byline=1&color=00adef&portrait=1&title=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+</div>
+</div>
+</div>
+<div id="wb_Footer">
+<div id="Footer-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0 140h1280C573.08 140 0 0 0 0z"/>
+</svg></div>
+<div id="Footer">
+<div class="col-1">
+<div id="wb_Text9">
+<div id="Text9-max-width">
+<span style="color:#000000;"><br>Copyright © Manosanta 2021</span>
+</div>
 </div>
 </div>
 </div>
